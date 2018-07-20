@@ -4,11 +4,64 @@
  *
  */
 
- hr {
+ .header-title {
+     float: right;
+ }
+
+ .my-name {
+     color: #7d97ad;
+ }
+
+ .my-title {
+     color: #2d3c49;
+ }
+
+ .header-separator {
      width: 90%;
      color: #7d97ad;
      border: 2px solid;
  }
+
+ .img-responsive {
+     vertical-align: middle;
+     width: 90%;
+     margin: auto;
+     padding-bottom: 5%;
+ }
+
+ .feature-one, 
+ .feature-two,
+ .feature-three {
+    margin: 15px;
+    text-align: center;
+}
+
+ .feature-text {
+     color: #7d97ad;
+     font-size: 2em;
+     margin: auto 5%;
+ }
+
+ .featured-separator {
+    max-width: 90%;
+    margin-top: 2px;
+    border: .5px solid #7d97ad;
+ }
+
+ .feature-title {
+     color: #2d3c49;
+ }
+
+ .feature-link {
+     color: #7d97ad;
+ }
+
+ .feature-separator {
+    width: 90%;
+    border: .5px solid #7d97ad;   
+ }
+
+
 
 /*
  *
@@ -16,19 +69,83 @@
  *
 */
 
+/* Screens below 400px */
+
 @media screen and (max-width: 400px) {
     .container {
-    display: flex;
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+    }
+    
+    .header-logo {
+        padding-top: 10%;
+        width: 50%;
+        height: 20%;
+        margin: auto;
+        order: 0;
+    }
+    
+    .header-title {
+        text-align: right;
+        order: 1;
+        margin-top: 20px;
+    }
+
+    .my-name {
+        font-size: 1.5em;
+        float: right;
+    }   
+
+    .my-title {
+        font-size: 1em;
+        float: right;
+    }
+
+    .feature-text {
+        text-align: left;
+    }
+
 }
 
-.header-logo {
-    max-width: 100%;
-    max-height: 50%;
+/* Screens between 401px and 760px */
+
+@media screen and (min-width: 401px) {
+    .container {
+        display: flex;
+        width: 90%;
+    }
+
+    .header-logo {
+        width: 20%;
+    }
+
+    .logo {
+        max-height: 7em;
+    }
+
+    .header-title {
+        width: 70%;
+        float: right;
+        text-align: right;
+    }
 }
 
-.header-title {
-    float: right;
-    justify-content: right;
-}
+/* Screens 761px and above*/
+
+@media screen and (min-width: 761px) {
+    .container {
+        display: flex;
+        width: 90%;
+        text-align: center;
+    }
+
+    .header-logo {
+        padding-top: 2%;
+    }
+
+    .header-title {
+        text-align: right;
+    }
 
 }
