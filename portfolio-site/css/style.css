@@ -69,9 +69,9 @@
  *
 */
 
-/* Screens below 400px */
+/* Screens 475px and below */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 475px) {
     .container {
         display: flex;
         flex-wrap: wrap;
@@ -108,26 +108,64 @@
 
 }
 
-/* Screens between 401px and 760px */
+/* Screens between 476px and 760px */
 
-@media screen and (min-width: 401px) {
+@media screen and (min-width: 476px) {
     .container {
         display: flex;
+        flex-wrap: wrap;
         width: 90%;
+        max-height: 10%;
+        padding: 10px;
+        margin: 0;
     }
 
     .header-logo {
         width: 20%;
-    }
-
-    .logo {
-        max-height: 7em;
+        padding-top: 5%;
     }
 
     .header-title {
         width: 70%;
-        float: right;
         text-align: right;
+        padding-top: 5%;
+        margin-left: 10%;
+    }
+
+    .my-name {
+        font-size: 2em;
+        float: right;
+    }   
+
+    .my-title {
+        font-size: 1.5em;
+        float: right;
+    }
+
+    .featured-work {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .feature-separator {
+        display: none;
+    }
+
+    .feature-one {
+        width: inherit;
+        margin: auto;
+    }
+
+    .feature-two {
+        width: 40%;
+        margin: auto;
+    }
+
+    .feature-three {
+        width: 40%;
+        margin: auto;
     }
 }
 
@@ -138,6 +176,7 @@
         display: flex;
         width: 90%;
         text-align: center;
+        /* margin: 0; */
     }
 
     .header-logo {
@@ -145,7 +184,49 @@
     }
 
     .header-title {
+        width: 70%;
         text-align: right;
+        /* margin-left: 10%; */
+        margin-right: 0;
+    }
+
+    .my-name {
+        font-size: 2.3em;
+        float: right;
+    }   
+
+    .my-title {
+        font-size: 2em;
+        float: right;
+    }
+
+    .featured-work {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .featured-separator {
+        max-width: 90%;
+        margin-top: 2px;
+        border: .5px solid #7d97ad;
+     }
+
+    .feature-separator {
+        display: none;
+    }
+
+    .feature-one {
+        width: 30%;
+    }
+
+    .feature-two {
+        width: 30%;
+    }
+
+    .feature-three {
+        width: 30%;
     }
 
 }
