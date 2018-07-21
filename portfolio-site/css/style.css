@@ -74,32 +74,34 @@
 @media screen and (max-width: 475px) {
     .container {
         display: flex;
+        padding: 5% 5% 0 0;
         flex-wrap: wrap;
-        width: 90%;
+        width: inherit;
+        margin: auto;
     }
     
     .header-logo {
-        padding-top: 10%;
-        width: 50%;
-        height: 20%;
-        margin: auto;
+        width: 20%;
+        margin: 5% auto;
         order: 0;
     }
     
     .header-title {
-        text-align: right;
-        order: 1;
         margin-top: 20px;
+        width: 65%;
+        order: 1;
     }
 
     .my-name {
         font-size: 1.5em;
         float: right;
+        margin: 5% 0 0 10%;
     }   
 
     .my-title {
-        font-size: 1em;
+        font-size: 1.5em;
         float: right;
+        margin: 5% 0 0 10%;
     }
 
     .feature-text {
@@ -108,28 +110,29 @@
 
 }
 
-/* Screens between 476px and 760px */
+/* 
+ * 
+ * Screens between 476px and 750px 
+ *
+ */
 
 @media screen and (min-width: 476px) {
     .container {
         display: flex;
-        flex-wrap: wrap;
-        width: 90%;
-        max-height: 10%;
-        padding: 10px;
-        margin: 0;
+        padding: 5% 5% 0 0;
+        width: inherit;
+        margin: auto;
     }
 
     .header-logo {
         width: 20%;
-        padding-top: 5%;
+        margin: 5% auto;
     }
 
     .header-title {
-        width: 70%;
+        margin-top: 20px;
+        width: 65%;
         text-align: right;
-        padding-top: 5%;
-        margin-left: 10%;
     }
 
     .my-name {
@@ -169,29 +172,33 @@
     }
 }
 
-/* Screens 761px and above*/
+/* 
+ * 
+ * Screens 761px and above
+ *
+ */
 
-@media screen and (min-width: 761px) {
+@media screen and (min-width: 751px) {
     .container {
         display: flex;
-        width: 90%;
-        text-align: center;
-        /* margin: 0; */
+        padding: 5% 5% 0 0;
+        width: inherit;
+        margin: auto;
     }
 
     .header-logo {
-        padding-top: 2%;
+        width: 20%;
+        margin: 5% auto;
     }
 
     .header-title {
-        width: 70%;
+        margin-top: 20px;
+        width: 65%;
         text-align: right;
-        /* margin-left: 10%; */
-        margin-right: 0;
     }
 
     .my-name {
-        font-size: 2.3em;
+        font-size: 2.5em;
         float: right;
     }   
 
@@ -228,5 +235,22 @@
     .feature-three {
         width: 30%;
     }
+
+}
+
+/* 
+ * 
+ * Screens above 950px
+ *
+ */
+
+@media screen and (min-width: 950px) {
+    .container {
+        display: flex;
+        width: inherit;
+        margin: auto;
+        padding: 5% 5% 0 0;
+    }
+
 
 }
