@@ -1,6 +1,6 @@
 /*
  *
- * Header
+ * HEADER
  *
  */
 
@@ -29,7 +29,13 @@
      padding-bottom: 5%;
  }
 
- .feature-one, 
+/*
+ *
+ * FEATURED WORK
+ *
+ */
+
+ .feature-one,
  .feature-two,
  .feature-three {
     margin: 15px;
@@ -58,18 +64,39 @@
 
  .feature-separator {
     width: 90%;
-    border: .5px solid #7d97ad;   
+    border: .5px solid #7d97ad;
+ }
+ 
+
+/*
+ *
+ * FOOTER
+ *
+ */
+
+ .credit {
+     text-align: center;
+     width: auto;
+     padding: 2% 0;
  }
 
+ a:hover,
+ a:visited {
+     text-decoration: none;
+ }
 
 
 /*
  *
- * Media Queries
+ * MEDIA QUERIES
  *
-*/
+ */
 
-/* Screens 475px and below */
+/* 
+ *
+ * Screens 475px and below
+ *
+ */
 
 @media screen and (max-width: 475px) {
     .container {
@@ -96,7 +123,7 @@
         font-size: 1.5em;
         float: right;
         margin: 5% 0 0 10%;
-    }   
+    }
 
     .my-title {
         font-size: 1.5em;
@@ -112,7 +139,7 @@
 
 /* 
  * 
- * Screens between 476px and 750px 
+ * Screens between 476px and 750px
  *
  */
 
@@ -139,7 +166,7 @@
         width: 70%;
         font-size: 2em;
         float: right;
-    }   
+    }
 
     .my-title {
         font-size: 1.5em;
@@ -202,7 +229,7 @@
         width: 70%;
         font-size: 2.5em;
         float: right;
-    }   
+    }
 
     .my-title {
         font-size: 2em;
@@ -241,7 +268,7 @@
 }
 
 /* 
- * 
+ *
  * Screens above 950px
  *
  */
@@ -269,7 +296,7 @@
         font-size: 2.5em;
         float: right;
         margin: 2% 0 0 5%;
-    }   
+    }
 
     .my-title {
         font-size: 2em;
