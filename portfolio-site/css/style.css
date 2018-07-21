@@ -74,7 +74,7 @@
 @media screen and (max-width: 475px) {
     .container {
         display: flex;
-        padding: 5% 5% 0 0;
+        padding: 2% 5% 0 0;
         flex-wrap: wrap;
         width: inherit;
         margin: auto;
@@ -82,13 +82,13 @@
     
     .header-logo {
         width: 20%;
-        margin: 5% auto;
+        margin: 2% auto;
         order: 0;
     }
     
     .header-title {
-        margin-top: 20px;
-        width: 65%;
+        margin-top: 2%;
+        width: 70%;
         order: 1;
     }
 
@@ -119,23 +119,24 @@
 @media screen and (min-width: 476px) {
     .container {
         display: flex;
-        padding: 5% 5% 0 0;
+        padding: 2% 5% 0 0;
         width: inherit;
         margin: auto;
     }
 
     .header-logo {
         width: 20%;
-        margin: 5% auto;
+        margin: 1% auto;
     }
 
     .header-title {
-        margin-top: 20px;
-        width: 65%;
+        margin-top: 1%;
+        width: 70%;
         text-align: right;
     }
 
     .my-name {
+        width: 70%;
         font-size: 2em;
         float: right;
     }   
@@ -174,30 +175,31 @@
 
 /* 
  * 
- * Screens 761px and above
+ * Screens 751px and above
  *
  */
 
 @media screen and (min-width: 751px) {
     .container {
         display: flex;
-        padding: 5% 5% 0 0;
+        padding: 1% 5% 0 0;
         width: inherit;
         margin: auto;
     }
 
     .header-logo {
         width: 20%;
-        margin: 5% auto;
+        margin: 2% auto;
     }
 
     .header-title {
-        margin-top: 20px;
-        width: 65%;
+        margin-top: 2%;
+        width: 70%;
         text-align: right;
     }
 
     .my-name {
+        width: 70%;
         font-size: 2.5em;
         float: right;
     }   
@@ -249,8 +251,34 @@
         display: flex;
         width: inherit;
         margin: auto;
-        padding: 5% 5% 0 0;
+        padding: 2% 5% 0 0;
     }
 
+    .header-logo {
+        width: 20%;
+        margin: 1% auto;
+    }
+    
+    .header-title {
+        margin-top: 1%;
+        width: 70%;
+    }
+
+    .my-name {
+        width: 70%;
+        font-size: 2.5em;
+        float: right;
+        margin: 2% 0 0 5%;
+    }   
+
+    .my-title {
+        font-size: 2em;
+        float: right;
+        margin: 2% 0 0 5%;
+    }
+
+    .feature-text {
+        text-align: left;
+    }
 
 }
