@@ -53,11 +53,23 @@ Player.prototype.render = function() {
 };
 
 // handle input method for the Player class
-Player.prototype.handleInput = function(dt) {
-
-
+Player.prototype.handleInput = function(key) {
+    if ((key === 'left') && (this.x !== 0)) {
+        this.x -= 100;
+    } else if ((key === 'right') && (this.x !== 400)) {
+        this.x += 100;
+    } else if ((key === 'up') && (this.y !== 10)) {
+        this.y -= 70;
+    } else if ((key === 'down') && (this.y !== 410)) {
+        this.y += 70;
+    }
 };
 
+Player.prototype.reset = function(key) {
+    if ((key === 'up') && (this.y === -10)) {
+        this.y = 410;
+    }
+};
 
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
@@ -87,4 +99,5 @@ document.addEventListener('keyup', function(e) {
     };
 
     player.handleInput(allowedKeys[e.keyCode]);
+    player.reset(allowedKeys[e.keyCode]);
 });
