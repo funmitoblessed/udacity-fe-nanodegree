@@ -1,8 +1,11 @@
 // Enemies our player must avoid
-var Enemy = function() {
+var Enemy = function(x, y) {
     // Variables applied to each of our instances go here,
     // we've provided one for you to get started
 
+    // enemy position
+    this.x = x;
+    this.y = y
 
     // The image/sprite for our enemies, this uses
     // a helper we've provided to easily load images
@@ -15,6 +18,7 @@ Enemy.prototype.update = function(dt) {
     // You should multiply any movement by the dt parameter
     // which will ensure the game runs at the same speed for
     // all computers.
+
 };
 
 // Draw the enemy on the screen, required method for game
@@ -25,9 +29,13 @@ Enemy.prototype.render = function() {
 // Now write your own player class
 // This class requires an update(), render() and
 // a handleInput() method.
-var Player = function() {
-    // image sprite for default player
+var Player = function(x, y) {
+    // image sprite for player
     this.sprite = 'images/char-pink-girl.png';
+
+    // player position
+    this.x = x;
+    this.y = y;
 
 };
 
@@ -44,7 +52,7 @@ Player.prototype.render = function() {
 };
 
 // handle input method for the Player class
-Player.prototype.handleInput = function() {
+Player.prototype.handleInput = function(dt) {
 
 
 };
@@ -54,12 +62,12 @@ Player.prototype.handleInput = function() {
 // Place all enemy objects in an array called allEnemies
 // Place the player object in a variable called player
 
-let player = new Player();
+let player = new Player(120, 140);
 
-let enemyOne = new Enemy();
-let enemyTwo = new Enemy();
-let enemyThree = new Enemy();
-let enemyFour = new Enemy();
+let enemyOne = new Enemy(120, 90);
+let enemyTwo = new Enemy(190, 300);
+let enemyThree = new Enemy(80, 200);
+let enemyFour = new Enemy(300, 139);
 
 let allEnemies = [enemyOne, enemyTwo, enemyThree, enemyFour];
 
